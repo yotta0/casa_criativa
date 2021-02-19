@@ -8,8 +8,8 @@
         <meta charset="UTF-8">
         <title>Casa Criativa</title>
 
-        <style>
-        
+        <!--<style href="./style.css"> </style> -->
+    <style>
         body {
             background:#e5e5e5;
             color: #25282b;
@@ -34,8 +34,19 @@
             
 
         }
+
+        #footer a {
+            color: #25282B;
+            text-decoration: none;
+
+        }
+
+        .hide {
+            display:none;
+
+        }
         
-        </style>  
+    </style>  
         
     </head>
 
@@ -65,7 +76,26 @@
         <button>+ Adicionar Ideia</button>
         <button class="fat" >Ver ideia</button>
 
-        <p> Com amor <a href="https://github.com/yotta0/">Yotta </p>
+        <p id="footer"> Com amor <a href="https://github.com/yotta0/">Yotta</a> :)</p>
+    
+    
+        <script>
+            document
+                .querySelector("button.fat")
+                .addEventListener("click", function(){
+                    document
+                        .querySelector("#footer")
+                        .classList
+                        .toggle("hide")
+
+
+                })
+        
+        
+        </script>
+    
+    
     </body>
+
 
 </html>
