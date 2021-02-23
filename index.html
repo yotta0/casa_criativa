@@ -47,7 +47,7 @@
 
                 <section id="buttons">
                     
-                    <button>+ Adicionar Ideia</button>
+                    <button onclick="onOff()">+ Adicionar Ideia</button>
                     <button class="fat" >Ver ideia</button>
                
                 </section>
@@ -120,24 +120,50 @@
         <!--
             Modal
         -->
-        <div id="modal">
+        <div id="modal" class="hide">
             <div class="content">
                 <h1>Nova Ideia</h1>
                 
                 <form action="">
+
+                    <div id="input-wrapper">
+                         <label for="title">Titulo da Ideia</label>
+                         <input type="text" name="title">
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="category">Categoria</label>
+                        <input type="text" name="category">
+                    </div>
+
+                    <div id="input-wrapper">
+                        <label for="image">Link da imagem</label>
+                        <input type="url" name="image">
+                    </div>
                     
-                    <label for="title">Titulo da Ideia</label>
-                    <input type="text" name="title">
+                    <div id="input-wrapper">
+                        <label for="description">Digite uma descrição para essa ideia</label>
+                        <textarea name="description" id="" cols="30" rows="10"></textarea>
+                    </div>
 
-                    <label for="catego</label>
-                    <input type="text" name="category">
+                    <div id="input-wrapper">
+                        <label for="link">Link da ideia</label>
+                        <input type="url" name="link">
 
-                    <label for="image">Titulo da Ideia</label>
-                    <input type="text" name="image">
 
-                    <label for="title ">Titulo da Ideia</label>
-                    <input type="text" name="title">
+                    </div>
 
+
+
+                    <a href="#" onclick="onOff()">Voltar</a>
+                    <button>Salvar</button>
+                    
+        
+
+
+                
+
+                 
                 </form>
             </div>
 
