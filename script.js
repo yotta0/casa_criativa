@@ -9,7 +9,3 @@ function onOff(){
 
 
 
-document
-    .querySelector("button.fat")
-    .addEventListener("click", onOff())
-
