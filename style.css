@@ -186,7 +186,6 @@ Modal
    
 
     display: flex;
-    align-items:center;
     justify-content: center;
 
     transition: 400ms;
