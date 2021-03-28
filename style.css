@@ -13,11 +13,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-body.hideScroll {
-    overflow: hidden;
-
-}
-
 
 
 .hide {
@@ -182,13 +177,16 @@ Modal
     background-color:#ff5E84;
 
     position: absolute;
+    top:0;
+
+
     
-    width : 100vw;
-    height: 100vh;
+    width: 100vw;
+    height : 180vh;
    
 
     display: flex;
-    align-items:center;;
+    align-items:center;
     justify-content: center;
 
     transition: 400ms;
