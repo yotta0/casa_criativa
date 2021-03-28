@@ -13,6 +13,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+body.hideScroll {
+    overflow: hidden;
+
+}
+
 
 
 .hide {
@@ -177,19 +182,29 @@ Modal
     background-color:#ff5E84;
 
     position: absolute;
-    top: 0;
-
-    width: 100vw;
-    height:120vh;
+    
+    width : 100vw;
+    height: 100vh;
+   
 
     display: flex;
+    align-items:center;;
     justify-content: center;
+
+    transition: 400ms;
 
     
 }
 
+#modal.addScroll {
+    overflow: auto;
+
+}
+
+
+
 #modal .content {
-    margin-top: 128px;
+    margin-top: 15%;
 
     color: white;
 
@@ -206,7 +221,7 @@ Modal
     width: 80%;
     max-width: 800px;
 
-    margin: 0 auto;
+    margin: 0 auto 15%;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
