@@ -4,6 +4,8 @@ CSS
 
 /* Index - Pagina inicio*/
 
+/* Global */
+
 body {
     background:#e5e5e5;
     color: #25282b;
@@ -40,6 +42,19 @@ p, .description{
     letter-spacing: 0.1px;
 }
 
+.button{
+    color: white;
+    background: #ff5E84;
+    
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+
+    box-shadow: 0px  8px 16px rgba(255, 0 , 92 ,0.16)
+}
+
+/* Padrão */
 
 #container {
     width:80%;
@@ -90,7 +105,7 @@ button:hover {
 
 }
 
-button.fat:hover{
+.button:hover{
 
     text-decoration: none;
 
@@ -117,17 +132,6 @@ footer a {
 }
 
 
-.fat {
-    color: white;
-    background: #ff5E84;
-    
-    width: 150px;
-    height: 40px;
-
-    border-radius: 6px;
-
-    box-shadow: 0px  8px 16px rgba(255, 0 , 92 ,0.16)
-}
 
 
 .idea {
@@ -178,7 +182,9 @@ Modal
 
     position: absolute;
     top:0;
-
+    bottom:0;
+    right:0;
+    left:0;
 
     
     width: 100vw;
